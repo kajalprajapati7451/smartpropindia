@@ -3,510 +3,381 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Smart Prop India | Luxury Homes Collection</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <title>Smart Prop India</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
+ <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- Preloader -->
-    <div id="preloader">
-        <div class="spinner"></div>
-    </div>
-
-    <!-- Back to Top Button -->
-    <a href="#" class="back-to-top">
-        <i class="fas fa-arrow-up"></i>
-    </a>
-
-    <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-light fixed-top">
-        <div class="container">
-            <a class="navbar-brand" href="#"><span>Smart Prop</span> India</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                <span class="navbar-toggler-icon"></span>
+    <!-- Navbar -->
+    <nav>
+        <div class="nav-container">
+            <div class="logo"> Smart Prop India</div>
+            <button class="hamburger">
+                <i class="fas fa-bars"></i>
             </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#home">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#about">About</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#projects">Projects</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#services">Services</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#gallery">Gallery</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#contact">Contact</a>
-                    </li>
-                    <li class="nav-item ms-2">
-                        <a class="nav-link nav-cta" href="#contact">
-                            <i class="fas fa-phone-alt me-1"></i> Enquire Now
-                        </a>
-                    </li>
-                </ul>
-            </div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#floor-plans">Floor Plans</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#location">Location</a></li>
+                
+            </ul>
         </div>
     </nav>
 
-    <!-- Hero Section with Slider -->
-    <section id="home" class="hero-slider">
-        <div class="hero-slide active" style="background-image: url('images/3.avif');">
-            <div class="hero-overlay"></div>
-            <div class="container hero-content">
-                <span class="project-badge">Premium Properties Across India</span>
-                <h1 class="fw-bold mb-4">Smart Property Investments, Smarter Returns</h1>
-                <p class="lead mb-5">Helping you buy, sell, rent, or invest in properties across India with expert guidance and transparency.</p>
-                <div class="hero-buttons">
-                    <a href="#contact" class="btn btn-primary btn-lg me-3 mb-3"><i class="fas fa-calendar-check me-2"></i> Free Consultation</a>
-                    <a href="#projects" class="btn btn-outline-light btn-lg mb-3"><i class="fas fa-home me-2"></i> Explore Properties</a>
-                </div>
-            </div>
-        </div>
-        
-        <div class="hero-slide" style="background-image: url('images/2.avif');">
-            <div class="hero-overlay"></div>
-            <div class="container hero-content">
-                <span class="project-badge">Luxury Living Spaces</span>
-                <h1 class="fw-bold mb-4">Discover Your Dream Home Today</h1>
-                <p class="lead mb-5">Exquisite properties with premium amenities in the most sought-after locations across India.</p>
-                <div class="hero-buttons">
-                    <a href="#projects" class="btn btn-primary btn-lg me-3 mb-3"><i class="fas fa-search me-2"></i> Browse Properties</a>
-                    <a href="#contact" class="btn btn-outline-light btn-lg mb-3"><i class="fas fa-download me-2"></i> Download Brochure</a>
-                </div>
-            </div>
-        </div>
-        
-        <div class="hero-slide" style="background-image: url('images/1.avif');">
-            <div class="hero-overlay"></div>
-            <div class="container hero-content">
-                <span class="project-badge">Investment Opportunities</span>
-                <h1 class="fw-bold mb-4">Strategic Real Estate Investments</h1>
-                <p class="lead mb-5">Maximize returns with our carefully curated investment properties in high-growth areas.</p>
-                <div class="hero-buttons">
-                    <a href="#services" class="btn btn-primary btn-lg me-3 mb-3"><i class="fas fa-chart-line me-2"></i> Investment Options</a>
-                    <a href="#contact" class="btn btn-outline-light btn-lg mb-3"><i class="fas fa-user-tie me-2"></i> Meet Our Advisors</a>
-                </div>
-            </div>
-        </div>
-        
-        <div class="slider-nav">
-            <div class="slider-dot active"></div>
-            <div class="slider-dot"></div>
-            <div class="slider-dot"></div>
-        </div>
-    </section>
-
-    <!-- Stats Section -->
-    <section class="stats-section">
-        <div class="container">
-            <div class="row text-center">
-                <div class="col-md-3 col-6 mb-4 mb-md-0">
-                    <div class="stats-number">500+</div>
-                    <div class="stats-label">HAPPY CLIENTS</div>
-                </div>
-                <div class="col-md-3 col-6 mb-4 mb-md-0">
-                    <div class="stats-number">250+</div>
-                    <div class="stats-label">PROPERTIES SOLD</div>
-                </div>
-                <div class="col-md-3 col-6">
-                    <div class="stats-number">15+</div>
-                    <div class="stats-label">CITIES</div>
-                </div>
-                <div class="col-md-3 col-6">
-                    <div class="stats-number">98%</div>
-                    <div class="stats-label">CLIENT SATISFACTION</div>
-                </div>
-            </div>
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Smart Property Investments, Smarter Returns</h1>
+            <p>Helping you buy, sell, rent, or invest in properties across India with expert guidance and transparency.</p>
+            <a href="#contact" class="cta-button">Get a Free Property Consultation Today</a>
         </div>
     </section>
 
     <!-- About Section -->
-    <section id="about" class="section">
-        <div class="container">
-            <h2 class="section-title">About Us</h2>
-            <div class="row align-items-center">
-                <div class="col-lg-6 mb-5 mb-lg-0">
-                    <div class="overview-image">
-                        <img src="images/house 4.avif" alt="Luxury Home" class="img-fluid rounded">
-                    </div>
-                </div>
-                <div class="col-lg-6">
-                    <h3 class="mb-4">Your Trusted Real Estate Partner</h3>
-                    <p class="mb-4">At Smart Prop India, we understand that buying or selling a property is one of the most significant decisions in your life. With over a decade of experience in the real estate industry, we've helped hundreds of clients find their dream homes and make profitable investments.</p>
-                    <p class="mb-4">Our team of experienced professionals is dedicated to providing personalized service, market expertise, and transparent processes to ensure your real estate journey is smooth and successful.</p>
-                    <div class="row mt-5">
-                        <div class="col-md-6 mb-4">
-                            <div class="d-flex">
-                                <div class="me-4">
-                                    <i class="fas fa-home fa-2x text-primary"></i>
-                                </div>
-                                <div>
-                                    <h5>Premium Properties</h5>
-                                    <p>Curated selection of luxury homes and investment properties</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-6 mb-4">
-                            <div class="d-flex">
-                                <div class="me-4">
-                                    <i class="fas fa-shield-alt fa-2x text-primary"></i>
-                                </div>
-                                <div>
-                                    <h5>Verified Listings</h5>
-                                    <p>All our properties undergo thorough verification checks</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-6 mb-4">
-                            <div class="d-flex">
-                                <div class="me-4">
-                                    <i class="fas fa-users fa-2x text-primary"></i>
-                                </div>
-                                <div>
-                                    <h5>Expert Team</h5>
-                                    <p>Experienced professionals with market knowledge</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-6 mb-4">
-                            <div class="d-flex">
-                                <div class="me-4">
-                                    <i class="fas fa-handshake fa-2x text-primary"></i>
-                                </div>
-                                <div>
-                                    <h5>End-to-End Service</h5>
-                                    <p>Comprehensive support from search to documentation</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Projects Section -->
-    <section id="projects" class="section bg-light-custom">
-        <div class="container">
-            <h2 class="section-title">Featured Projects</h2>
-            <p class="text-center mb-5">Discover our handpicked selection of premium properties across India's most sought-after locations</p>
-            
-            <div class="row">
-                <div class="col-md-4 mb-4">
-                    <div class="project-card">
-                        <div class="project-img">
-                            <img src="images/house 1.jpeg" alt="Luxury Apartments">
-                            <div class="project-overlay"></div>
-                        </div>
-                        <div class="project-content">
-                            <span class="project-status status-complete">Ready to Move</span>
-                            <h4>Elegance Heights</h4>
-                            <p class="text-muted">Bangalore</p>
-                            <p class="project-price">₹2.5 Cr - ₹4.5 Cr</p>
-                                                        <p>Luxury 3 & 4 BHK apartments with panoramic city views and premium amenities.</p>
-                            <div class="project-features">
-                                <span class="project-feature"><i class="fas fa-bed"></i> 3-4 Beds</span>
-                                <span class="project-feature"><i class="fas fa-bath"></i> 2-3 Baths</span>
-                                <span class="project-feature"><i class="fas fa-ruler-combined"></i> 1800-2800 sq.ft.</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="col-md-4 mb-4">
-                    <div class="project-card">
-                        <div class="project-img">
-                            <img src="images/house 2.jpeg" alt="Modern Villas">
-                            <div class="project-overlay"></div>
-                        </div>
-                        <div class="project-content">
-                            <span class="project-status status-ongoing">Under Construction</span>
-                            <h4>Serene Valley Villas</h4>
-                            <p class="text-muted">Hyderabad</p>
-                            <p class="project-price">₹4.2 Cr - ₹6.8 Cr</p>
-                            <p>Exclusive gated community with modern villas and lush green spaces.</p>
-                            <div class="project-features">
-                                <span class="project-feature"><i class="fas fa-bed"></i> 4-5 Beds</span>
-                                <span class="project-feature"><i class="fas fa-bath"></i> 3-4 Baths</span>
-                                <span class="project-feature"><i class="fas fa-ruler-combined"></i> 3200-4500 sq.ft.</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="col-md-4 mb-4">
-                    <div class="project-card">
-                        <div class="project-img">
-                            <img src="images/house 3.jpeg" alt="Luxury Apartments">
-                            <div class="project-overlay"></div>
-                        </div>
-                        <div class="project-content">
-                            <span class="project-status status-upcoming">Launching Soon</span>
-                            <h4>Marina Bay Residences</h4>
-                            <p class="text-muted">Mumbai</p>
-                            <p class="project-price">₹5.8 Cr - ₹9.2 Cr</p>
-                            <p>Waterfront luxury residences with premium finishes and breathtaking views.</p>
-                            <div class="project-features">
-                                <span class="project-feature"><i class="fas fa-bed"></i> 3-5 Beds</span>
-                                <span class="project-feature"><i class="fas fa-bath"></i> 3-4 Baths</span>
-                                <span class="project-feature"><i class="fas fa-ruler-combined"></i> 2200-3800 sq.ft.</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="text-center mt-5">
-                <a href="#contact" class="btn btn-primary btn-lg"><i class="fas fa-list me-2"></i> View All Projects</a>
-            </div>
-        </div>
+    <section id="about" class="about">
+        <h2 class="section-title">About Us</h2>
+        <p>At Smart Prop India, we simplify property buying, selling, and investment for individuals, families, and businesses. Whether you are looking for your dream home, a commercial property, or a secure investment opportunity, our expert advisors ensure you get the best deals with complete transparency.</p>
+        <p>Smart Prop India is a trusted real estate consulting firm with a strong presence in the Indian property market. Our mission is to deliver transparent, customer-first solutions that empower clients to make informed decisions.</p>
+        <p>We serve buyers, sellers, investors, and NRIs who seek reliable property solutions in Delhi NCR and beyond. With a team of professionals and a portfolio of verified properties, we make real estate simple, secure, and profitable.</p>
     </section>
 
     <!-- Services Section -->
-    <section id="services" class="section">
-        <div class="container">
-            <h2 class="section-title">Our Services</h2>
-            <p class="text-center mb-5">Comprehensive real estate solutions tailored to your unique needs</p>
-            
-            <div class="row">
-                <div class="col-md-4 mb-4">
-                    <div class="feature-card">
-                        <div class="feature-icon">
-                            <i class="fas fa-home"></i>
-                        </div>
-                        <h4>Property Buying</h4>
-                        <p>Expert guidance through the entire home buying process, from search to closing.</p>
-                        <ul class="list-unstyled mt-4">
-                            <li class="mb-2"><i class="fas fa-check-circle text-primary me-2"></i> Personalized property recommendations</li>
-                            <li class="mb-2"><i class="fas fa-check-circle text-primary me-2"></i> Site visits & virtual tours</li>
-                            <li class="mb-2"><i class="fas fa-check-circle text-primary me-2"></i> Negotiation & price finalization</li>
-                            <li class="mb-2"><i class="fas fa-check-circle text-primary me-2"></i> Legal verification & documentation</li>
-                        </ul>
+    <section id="services" class="services">
+        <h2 class="section-title">Our Services</h2>
+        <div class="services-container">
+            <div class="service-card">
+                <i class="fas fa-home"></i>
+                <h3>Property Buying & Selling</h3>
+                <p>Find the right property or buyer with ease. Our experts guide you through the entire process.</p>
+            </div>
+            <div class="service-card">
+                <i class="fas fa-chart-line"></i>
+                <h3>Investment Consulting</h3>
+                <p>Maximize your returns with smart investment planning and market insights.</p>
+            </div>
+            <div class="service-card">
+                <i class="fas fa-building"></i>
+                <h3>Residential & Commercial</h3>
+                <p>Wide range of verified properties tailored to your specific needs and preferences.</p>
+            </div>
+            <div class="service-card">
+                <i class="fas fa-tools"></i>
+                <h3>Property Management</h3>
+                <p>Stress-free property handling for NRIs and investors with complete maintenance solutions.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Floor Plans Section -->
+    <section id="floor-plans" class="floor-plans">
+        <h2 class="section-title">Explore Floor Plans</h2>
+        
+        <div class="tabs">
+            <button class="tab-btn active" data-tab="2bhk">2 BHK Apartments</button>
+            <button class="tab-btn" data-tab="3bhk">3 BHK Apartments</button>
+            <button class="tab-btn" data-tab="villas">Villas</button>
+            <button class="tab-btn" data-tab="commercial">Commercial</button>
+        </div>
+        
+        <div class="tab-content active" id="2bhk">
+            <div class="floor-plan-container">
+                <div class="floor-plan-card">
+                    <div class="floor-plan-img">
+                        <img src="images/download 3.jpeg" alt="2 BHK Luxury Apartment">
+                    </div>
+                    <div class="floor-plan-details">
+                        <h3>Elegant 2 BHK Apartment</h3>
+                        <p><i class="fas fa-ruler-combined"></i> Area: 1050 sq.ft.</p>
+                        <p><i class="fas fa-bed"></i> Bedrooms: 2</p>
+                        <p><i class="fas fa-bath"></i> Bathrooms: 2</p>
+                        <p><i class="fas fa-car"></i> Parking: 1</p>
+                        <p class="floor-plan-price">₹75 Lakhs</p>
                     </div>
                 </div>
                 
-                <div class="col-md-4 mb-4">
-                    <div class="feature-card">
-                        <div class="feature-icon">
-                            <i class="fas fa-key"></i>
-                        </div>
-                        <h4>Property Selling</h4>
-                        <p>Maximize your returns with our strategic marketing and negotiation expertise.</p>
-                        <ul class="list-unstyled mt-4">
-                            <li class="mb-2"><i class="fas fa-check-circle text-primary me-2"></i> Professional valuation & pricing</li>
-                            <li class="mb-2"><i class="fas fa-check-circle text-primary me-2"></i> Professional photography & staging</li>
-                            <li class="mb-2"><i class="fas fa-check-circle text-primary me-2"></i> Targeted marketing campaigns</li>
-                            <li class="mb-2"><i class="fas fa-check-circle text-primary me-2"></i> Qualified buyer screening</li>
-                        </ul>
+                <div class="floor-plan-card">
+                    <div class="floor-plan-img">
+                        <img src="images/download 4.jpeg" alt="2 BHK Modern Apartment">
                     </div>
-                </div>
-                
-                <div class="col-md-4 mb-4">
-                    <div class="feature-card">
-                        <div class="feature-icon">
-                            <i class="fas fa-chart-line"></i>
-                        </div>
-                        <h4>Investment Advisory</h4>
-                        <p>Data-driven insights to help you make informed real estate investment decisions.</p>
-                        <ul class="list-unstyled mt-4">
-                            <li class="mb-2"><i class="fas fa-check-circle text-primary me-2"></i> Market research & analysis</li>
-                            <li class="mb-2"><i class="fas fa-check-circle text-primary me-2"></i> ROI projections & cash flow analysis</li>
-                            <li class="mb-2"><i class="fas fa-check-circle text-primary me-2"></i> Portfolio diversification strategies</li>
-                            <li class="mb-2"><i class="fas fa-check-circle text-primary me-2"></i> Property management solutions</li>
-                        </ul>
+                    <div class="floor-plan-details">
+                        <h3>Modern 2 BHK Apartment</h3>
+                        <p><i class="fas fa-ruler-combined"></i> Area: 1200 sq.ft.</p>
+                        <p><i class="fas fa-bed"></i> Bedrooms: 2</p>
+                        <p><i class="fas fa-bath"></i> Bathrooms: 2</p>
+                        <p><i class="fas fa-car"></i> Parking: 1</p>
+                        <p class="floor-plan-price">₹82 Lakhs</p>
                     </div>
                 </div>
             </div>
+        </div>
+        
+        <div class="tab-content" id="3bhk">
+            <div class="floor-plan-container">
+                <div class="floor-plan-card">
+                    <div class="floor-plan-img">
+                        <img src="images/download 5.jpeg" alt="3 BHK Luxury Apartment">
+                    </div>
+                    <div class="floor-plan-details">
+                        <h3>Spacious 3 BHK Apartment</h3>
+                        <p><i class="fas fa-ruler-combined"></i> Area: 1650 sq.ft.</p>
+                        <p><i class="fas fa-bed"></i> Bedrooms: 3</p>
+                        <p><i class="fas fa-bath"></i> Bathrooms: 3</p>
+                        <p><i class="fas fa-car"></i> Parking: 2</p>
+                        <p class="floor-plan-price">₹1.2 Crore</p>
+                    </div>
+                </div>
+                
+                <div class="floor-plan-card">
+                    <div class="floor-plan-img">
+                        <img src="images/download 6.jpeg" alt="3 BHK Premium Apartment">
+                    </div>
+                    <div class="floor-plan-details">
+                        <h3>Premium 3 BHK Apartment</h3>
+                        <p><i class="fas fa-ruler-combined"></i> Area: 1800 sq.ft.</p>
+                        <p><i class="fas fa-bed"></i> Bedrooms: 3</p>
+                        <p><i class="fas fa-bath"></i> Bathrooms: 3</p>
+                        <p><i class="fas fa-car"></i> Parking: 2</p>
+                        <p class="floor-plan-price">₹1.5 Crore</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="tab-content" id="villas">
+            <div class="floor-plan-container">
+                <div class="floor-plan-card">
+                    <div class="floor-plan-img">
+                        <img src="images/download 7.jpeg" alt="Luxury Villa">
+                    </div>
+                    <div class="floor-plan-details">
+                        <h3>Luxury 4 BHK Villa</h3>
+                        <p><i class="fas fa-ruler-combined"></i> Area: 4200 sq.ft.</p>
+                        <p><i class="fas fa-bed"></i> Bedrooms: 4</p>
+                        <p><i class="fas fa-bath"></i> Bathrooms: 4</p>
+                        <p><i class="fas fa-car"></i> Parking: 3</p>
+                        <p class="floor-plan-price">₹3.8 Crore</p>
+                    </div>
+                </div>
+                
+                <div class="floor-plan-card">
+                    <div class="floor-plan-img">
+                        <img src="images/download 8.jpeg" alt="Modern Villa">
+                    </div>
+                    <div class="floor-plan-details">
+                        <h3>Modern 5 BHK Villa</h3>
+                        <p><i class="fas fa-ruler-combined"></i> Area: 5500 sq.ft.</p>
+                        <p><i class="fas fa-bed"></i> Bedrooms: 5</p>
+                        <p><i class="fas fa-bath"></i> Bathrooms: 5</p>
+                        <p><i class="fas fa-car"></i> Parking: 4</p>
+                        <p class="floor-plan-price">₹5.2 Crore</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="tab-content" id="commercial">
+            <div class="floor-plan-container">
+                <div class="floor-plan-card">
+                    <div class="floor-plan-img">
+                        <img src="images/download 9.jpeg" alt="Office Space">
+                    </div>
+                    <div class="floor-plan-details">
+                        <h3>Premium Office Space</h3>
+                        <p><i class="fas fa-ruler-combined"></i> Area: 2200 sq.ft.</p>
+                        <p><i class="fas fa-door-open"></i> Rooms: 6</p>
+                        <p><i class="fas fa-concierge-bell"></i> Amenities: Full</p>
+                        <p><i class="fas fa-car"></i> Parking: 10</p>
+                        <p class="floor-plan-price">₹2.1 Crore</p>
+                    </div>
+                </div>
+                
+                <div class="floor-plan-card">
+                    <div class="floor-plan-img">
+                        <img src="images/download 10.jpeg" alt="Retail Space">
+                    </div>
+                    <div class="floor-plan-details">
+                        <h3>Retail Commercial Space</h3>
+                        <p><i class="fas fa-ruler-combined"></i> Area: 1800 sq.ft.</p>
+                        <p><i class="fas fa-store"></i> Type: Retail</p>
+                        <p><i class="fas fa-users"></i> Capacity: 50+</p>
+                        <p><i class="fas fa-car"></i> Parking: 8</p>
+                        <p class="floor-plan-price">₹1.7 Crore</p>
+                    </div>
+                </div>            </div>
         </div>
     </section>
 
     <!-- Gallery Section -->
-    <section id="gallery" class="gallery-section">
-        <div class="container">
-            <h2 class="section-title">Property Gallery</h2>
-            <p class="text-center mb-5">Take a visual tour of our premium properties and amenities</p>
-            
-            <div class="gallery-container">
-                <div class="gallery-slider">
-                    <div class="gallery-item">
-                        <img src="images/housw.avif" alt="Living Room">
-                        <div class="gallery-caption">Modern Living Room</div>
+    <section id="gallery" class="gallery">
+        <h2 class="section-title">Property Gallery</h2>
+        <div class="slider-container">
+            <div class="slider">
+                <div class="slide">
+                    <img src="images/bedroom.jpeg" alt="Luxury Living Room">
+                </div>
+                <div class="slide">
+                    <img src="images/house 2.jpeg" alt="Modern Kitchen">
+                </div>
+                <div class="slide">
+                    <img src="images/house 1.jpeg" alt="Elegant Bedroom">
+                </div>
+                <div class="slide">
+                    <img src="images/modern.jpeg" alt="Property Exterior">
+                </div>
+            </div>
+            <button class="slider-btn prev"><i class="fas fa-chevron-left"></i></button>
+            <button class="slider-btn next"><i class="fas fa-chevron-right"></i></button>
+            <div class="slider-nav">
+                <div class="slider-dot active"></div>
+                <div class="slider-dot"></div>
+                <div class="slider-dot"></div>
+                <div class="slider-dot"></div>
+            </div>
+        </div>
+    </section>
+        <!-- Location Section -->
+    <section id="location" class="location">
+        <h2 class="section-title">Our Locations</h2>
+        <div class="location-container">
+            <div class="location-map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d224570.164453244!2d76.93180694999999!3d28.4239091!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d19d582e38859%3A0x2cf5fe8e5c64b1e!2sGurugram%2C%20Haryana!5e0!3m2!1sen!2sin!4v1718897668038!5m2!1sen!2sin" width="100%" height="450" style="border:0; border-radius:15px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <div class="location-content">
+                <h3>Prime Locations Across India</h3>
+                <p>Smart Prop India has a strong presence in key real estate markets across the country, with a special focus on Delhi NCR, Mumbai, Bangalore, and Hyderabad.</p>
+                
+                <div class="location-list">
+                    <div class="location-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h4>Delhi NCR</h4>
+                            <p>Gurgaon, Noida, Faridabad, Ghaziabad</p>
+                        </div>
                     </div>
-                    <div class="gallery-item">
-                        <img src="images/kitchen.jpeg" alt="Kitchen">
-                        <div class="gallery-caption">Luxury Kitchen</div>
+                    <div class="location-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h4>Mumbai</h4>
+                            <p>South Mumbai, Bandra, Andheri, Powai</p>
+                        </div>
                     </div>
-                    <div class="gallery-item">
-                        <img src="images/bedroom.jpeg" alt="Bedroom">
-                        <div class="gallery-caption">Master Bedroom</div>
+                    <div class="location-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h4>Bangalore</h4>
+                            <p>Whitefield, Electronic City, Koramangala</p>
+                        </div>
                     </div>
-                    <div class="gallery-item">
-                        <img src="images/bathroom.jpeg" alt="Bathroom">
-                        <div class="gallery-caption">Spa-like Bathroom</div>
-                    </div>
-                    <div class="gallery-item">
-                        <img src="images/pool.jpeg" alt="Swimming Pool">
-                        <div class="gallery-caption">Infinity Pool</div>
-                    </div>
-                    <div class="gallery-item">
-                        <img src="images/fitness.jpeg" alt="Gym">
-                        <div class="gallery-caption">Fitness Center</div>
+                    <div class="location-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h4>Hyderabad</h4>
+                            <p>Gachibowli, Hitech City, Banjara Hills</p>
+                        </div>
                     </div>
                 </div>
                 
-                <div class="gallery-arrow prev">
-                    <i class="fas fa-chevron-left"></i>
-                </div>
-                <div class="gallery-arrow next">
-                    <i class="fas fa-chevron-right"></i>
-                </div>
-            </div>
-            
-            <div class="gallery-nav">
-                <div class="gallery-dot active"></div>
-                <div class="gallery-dot"></div>
-                <div class="gallery-dot"></div>
+                <p class="location-note">We serve clients across India and provide specialized services for NRIs looking to invest in Indian real estate.</p>
             </div>
         </div>
     </section>
 
     <!-- Contact Section -->
-    <section id="contact" class="section bg-light-custom">
-        <div class="container">
-            <h2 class="section-title">Get In Touch</h2>
-            <p class="text-center mb-5">Reach out to our experts for personalized assistance with your real estate needs</p>
-            
-            <div class="row">
-                <div class="col-lg-6 mb-5 mb-lg-0">
-                    <div class="contact-form">
-                        <h3 class="mb-4">Send us a Message</h3>
-                        <form>
-                            <div class="row">
-                                <div class="col-md-6 mb-4">
-                                    <div class="form-group">
-                                        <label for="name" class="form-label">Full Name</label>
-                                        <input type="text" class="form-control" id="name" placeholder="Your Name">
-                                    </div>
-                                </div>
-                                <div class="col-md-6 mb-4">
-                                    <div class="form-group">
-                                        <label for="email" class="form-label">Email Address</label>
-                                        <input type="email" class="form-control" id="email" placeholder="Your Email">
-                                    </div>
-                                </div>
-                                <div class="col-md-6 mb-4">
-                                    <div class="form-group">
-                                        <label for="phone" class="form-label">Phone Number</label>
-                                        <input type="tel" class="form-control" id="phone" placeholder="Your Phone">
-                                    </div>
-                                </div>
-                                <div class="col-md-6 mb-4">
-                                    <div class="form-group">
-                                        <label for="service" class="form-label">Service Needed</label>
-                                        <select class="form-select" id="service">
-                                            <option selected>Select a Service</option>
-                                            <option value="buying">Property Buying</option>
-                                            <option value="selling">Property Selling</option>
-                                            <option value="investment">Investment Advisory</option>
-                                            <option value="other">Other</option>
-                                        </select>
-                                    </div>
-                                </div>
-                                <div class="col-12 mb-4">
-                                    <div class="form-group">
-                                        <label for="message" class="form-label">Message</label>
-                                        <textarea class="form-control" id="message" rows="5" placeholder="How can we help you?"></textarea>
-                                    </div>
-                                </div>
-                                <div class="col-12">
-                                    <button type="submit" class="btn btn-primary w-100">Submit Message</button>
-                                </div>
-                            </div>
-                        </form>
+    <section id="contact" class="contact">
+        <h2 class="section-title">Contact Us</h2>
+        <div class="contact-container">
+            <div class="contact-info">
+                <div class="contact-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <div class="contact-details">
+                        <h3>Our Office</h3>
+                        <p>123 Property Street, Real Estate District, Delhi NCR, India - 110001</p>
                     </div>
                 </div>
-                
-                <div class="col-lg-6">
-                    <div class="ps-lg-4">
-                        <h3 class="mb-4">Contact Information</h3>
-                        <p class="mb-4">Our team is ready to assist you with all your real estate needs. Reach out to us through any of the following channels:</p>
-                        
-                        <div class="d-flex mb-4">
-                            <div class="me-4">
-                                <i class="fas fa-map-marker-alt fa-2x text-primary"></i>
-                            </div>
-                            <div>
-                                <h5>Office Address</h5>
-                                <p>123 Business District,<br>Mumbai, Maharashtra 400001</p>
-                            </div>
-                        </div>
-                        
-                        <div class="d-flex mb-4">
-                            <div class="me-4">
-                                <i class="fas fa-phone-alt fa-2x text-primary"></i>
-                            </div>
-                            <div>
-                                <h5>Phone Number</h5>
-                                <p>+91 98765 43210<br>+91 91234 56789</p>
-                            </div>
-                        </div>
-                        
-                        <div class="d-flex mb-4">
-                            <div class="me-4">
-                                <i class="fas fa-envelope fa-2x text-primary"></i>
-                            </div>
-                            <div>
-                                <h5>Email Address</h5>
-                                <p>info@smartpropindia.com<br>support@smartpropindia.com</p>
-                            </div>
-                        </div>
-                        
-                        <div class="mt-5">
-                            <h5 class="mb-3">Follow Us</h5>
-                            <div class="social-icons">
-                                <a href="#"><i class="fab fa-facebook-f"></i></a>
-                                <a href="#"><i class="fab fa-twitter"></i></a>
-                                <a href="#"><i class="fab fa-instagram"></i></a>
-                                <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                                <a href="#"><i class="fab fa-youtube"></i></a>
-                            </div>
-                        </div>
+                <div class="contact-item">
+                    <i class="fas fa-phone-alt"></i>
+                    <div class="contact-details">
+                        <h3>Phone Number</h3>
+                        <p>+91 9876543210</p>
                     </div>
                 </div>
+                <div class="contact-item">
+                    <i class="fas fa-envelope"></i>
+                    <div class="contact-details">
+                        <h3>Email Address</h3>
+                        <p>info@smartpropindia.com</p>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-clock"></i>
+                    <div class="contact-details">
+                        <h3>Working Hours</h3>
+                        <p>Monday - Saturday: 9:00 AM - 6:00 PM</p>
+                    </div>
+                </div>
+            </div>
+            <div class="contact-form">
+                <form id="property-form">
+                    <div class="form-group">
+                        <label for="name">Full Name</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Phone Number</label>
+                        <input type="tel" id="phone" name="phone" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="interest">I'm Interested In</label>
+                        <select id="interest" name="interest">
+                            <option value="buying">Buying a Property</option>
+                            <option value="selling">Selling a Property</option>
+                            <option value="investment">Investment Opportunity</option>
+                            <option value="consultation">Free Consultation</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" required></textarea>
+                    </div>
+                    <button type="submit" class="submit-btn">Send Message</button>
+                </form>
             </div>
         </div>
     </section>
 
     <!-- Footer -->
-    <footer class="footer bg-dark text-light py-4">
-    <div class="container">
-        <hr class="mt-3 mb-4 border-secondary">
-        <div class="row align-items-center">
-            <div class="col-md-6 mb-3 mb-md-0">
-                <p class="mb-0">
-                    This website is for informational purposes only. 
-                    Details and specifications are subject to change without prior notice.
-                </p>
-            </div>
-            <div class="col-md-6 text-md-end">
-                <a href="#" class="text-light me-3">Privacy Policy</a>
-                <a href="#" class="text-light">Terms of Service</a>
-            </div>
+  <footer style="background:#222; color:#fff; padding:20px 0; text-align:center;">
+ 
+        <div class="copyright">
+            <p style="margin:0;">This website is for informational purposes only. Details and specifications are subject to change without prior notice.</p>
         </div>
     </div>
 </footer>
 
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <div class="bubbles">
+  <div class="bubble"></div>
+  <div class="bubble gold"></div>
+  <div class="bubble"></div>
+  <div class="bubble gold"></div>
+  <div class="bubble"></div>
+  <div class="bubble gold"></div>
+  <div class="bubble"></div>
+</div>
+
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top"><i class="fas fa-arrow-up"></i></button>
+
    <script src="script.js"></script>
 </body>
 </html>
