@@ -104,15 +104,48 @@ nav {
     font-size: 1.8rem;
     color: var(--white);
 }
+/* ✅ Responsive Navbar */
 
-/* Hero Section */
-/* Hero Section */
+/* Tablet */
+@media (max-width: 768px) {
+    nav {
+        padding: 10px 0; /* height choti */
+    }
+    .logo {
+        font-size: 22px; /* logo text chota */
+    }
+    .nav-links li {
+        margin-left: 20px; /* gap kam */
+    }
+    .nav-links a {
+        font-size: 14px; /* links chote */
+    }
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+    nav {
+        padding: 8px 0; /* aur compact */
+    }
+    .logo {
+        font-size: 18px; /* aur chota */
+    }
+    .nav-links li {
+        margin-left: 15px;
+    }
+    .nav-links a {
+        font-size: 13px;
+    }
+    .hamburger {
+        font-size: 1.5rem; /* hamburger icon compact */
+    }
+}
+
+
+/* ✅ Hero Section */
 .hero {
-    background: 
-        linear-gradient(rgba(65, 105, 225, 0.75), rgba(25, 25, 112, 0.75)),
-        url('images/housw.avif');
+    background: url('images/house 1.jpeg') no-repeat center center;
     background-size: cover;
-    background-position: center;
     height: 100vh;
     display: flex;
     align-items: center;
@@ -123,54 +156,71 @@ nav {
     position: relative;
 }
 
+/* Overlay for better text readability */
+.hero::after {
+    content: "";
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: rgba(0, 0, 0, 0.4);
+    z-index: 1;
+}
+
 .hero-content {
-    max-width: 800px;
+    max-width: 850px;
+    position: relative;
+    z-index: 2;
     animation: fadeIn 1.5s ease;
 }
 
-/* Stylish Heading */
+/* ✅ Hero Heading */
 .hero h1 {
-    font-size: clamp(2.2rem, 5vw, 4rem);
-    margin-bottom: 20px;
+    font-family: 'Segoe UI', Arial, Helvetica, sans-serif; /* 👈 Bina import ke clean font */
+    font-size: clamp(2rem, 5vw, 3rem);
+    margin-bottom: 15px;
     font-weight: 800;
     line-height: 1.2;
-    letter-spacing: 2px;
     text-transform: uppercase;
-
-    background: linear-gradient(90deg, var(--white), var(--light-blue), var(--white));
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-
-    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.4);
-    animation: fadeInDown 1.2s ease both;
+    color: #fff;
+    letter-spacing: 1px;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
 }
 
-/* Hero Paragraph */
+/* ✅ Tablet View */
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 1.6rem;  
+        line-height: 1.2;
+    }
+}
+
+/* ✅ Mobile View */
+@media (max-width: 480px) {
+    .hero h1 {
+        font-size: 1.1rem;  /* 👈 mobile pe compact */
+        line-height: 1.1;
+        letter-spacing: 0.5px;
+    }
+}
+
+
+/* ✅ Hero Paragraph */
 .hero p {
-    font-size: clamp(1rem, 2vw, 1.4rem);
-    margin-bottom: 35px;
-    max-width: 650px;
-    margin-left: auto;
-    margin-right: auto;
-    line-height: 1.7;
-    color: #f8f9fa;
-    font-weight: 400;
-    letter-spacing: 0.5px;
-    animation: fadeInUp 1.4s ease both;
+    font-size: 1rem;
+    margin-bottom: 20px;
+    color: #fff;
 }
 
-/* Stylish CTA Button */
+/* ✅ CTA Button */
 .cta-button {
     display: inline-block;
     background: linear-gradient(135deg, var(--white), #f8f9fa);
     color: var(--primary-blue);
-    padding: 16px 40px;
+    padding: 14px 36px;
     border-radius: 50px;
     text-decoration: none;
     font-weight: 700;
-    font-size: clamp(1rem, 1.8vw, 1.2rem);
+    font-size: clamp(0.95rem, 1.5vw, 1.1rem);
     letter-spacing: 1px;
-
     transition: all 0.3s ease;
     box-shadow: 0 6px 18px rgba(0, 0, 0, 0.25);
     animation: fadeInUp 1.6s ease both;
@@ -179,11 +229,11 @@ nav {
 .cta-button:hover {
     background: var(--light-blue);
     color: var(--dark-blue);
-    transform: translateY(-5px) scale(1.05);
+    transform: translateY(-4px) scale(1.05);
     box-shadow: 0 12px 28px rgba(0, 0, 0, 0.35);
 }
 
-/* Animations */
+/* ✅ Animations */
 @keyframes fadeInDown {
     from { opacity: 0; transform: translateY(-40px); }
     to   { opacity: 1; transform: translateY(0); }
@@ -194,6 +244,42 @@ nav {
     to   { opacity: 1; transform: translateY(0); }
 }
 
+/* ✅ Tablet View */
+@media (max-width: 768px) {
+    .hero {
+        height: 70vh; 
+        background-position: top;
+    }
+    .hero h1 {
+        font-size: 1.8rem;
+    }
+    .hero p {
+        font-size: 0.95rem;
+    }
+    .cta-button {
+        padding: 12px 28px;
+        font-size: 0.9rem;
+    }
+}
+
+/* ✅ Mobile View */
+@media (max-width: 480px) {
+    .hero {
+        height: 60vh;
+        padding: 0 10px;
+    }
+    .hero h1 {
+        font-size: 0.5rem;
+        line-height: 0.95;
+    }
+    .hero p {
+        font-size: 0.85rem;
+    }
+    .cta-button {
+        font-size: 0.85rem;
+        padding: 8px 20px;
+    }
+}
 
 /* Sections */
 section {
